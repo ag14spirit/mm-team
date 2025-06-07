@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #333c4e;">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+  <title>Our Team - Staff Directory</title>
+  <!-- Link to your existing stylesheet -->
+  <link rel="stylesheet" href="./style.min.css" />
+  <style>
+    /* Additional styles for the directory grid layout */
+    body {
+      max-width: 60rem; /* Allow wider layout for directory */
+    }
+
+    main {
+      margin-top: 0; /* Adjust margin for directory page */
+    }
+
+    .directory-title {
+        color: #f46a00;
+        font-weight: 800;
+        font-size: 2.5rem;
+        line-height: 1;
+        margin-top: -4rem; /* Pull title up over the header image */
+        margin-bottom: 2rem;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .directory-grid {
+      display: grid;
+      /* Creates a responsive grid that shows 2 columns on small screens and up to 4 on larger ones */
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem 1.5rem; /* Row and column gap */
+      padding: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .staff-member {
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+
+    .staff-member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .staff-member a {
+      text-decoration: none;
+      color: #333c4e; /* Use text color from your theme */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .staff-member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff; /* White border to lift the photo off the page */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      margin-bottom: 1rem;
+    }
+
+    .staff-member .name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0;
+    }
+    
+    /* Responsive adjustments for larger screens */
+    @media (min-width: 640px) { /* sm breakpoint */
+        .directory-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (min-width: 1024px) { /* lg breakpoint */
+        .directory-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+  </style>
+</head>
+
+<body id="body">
+  <header>
+    <!-- Reusing the header from your template for brand consistency -->
+    <div class="headerImgC">
+      <img id="cover" src="https://assets.mediamerge.com/images/transforms/_heroFull/310/CU5-Optimized.webp" alt="Background Pattern" />
+      <img id="logo" src="./logo.png" alt="Logo" style="margin: 3px 0px 6rem" />
+    </div>
+  </header>
+
+  <main style="background-color: #eee;">
+    <h1 class="directory-title">Our Team</h1>
+    
+    <!-- Grid container for all staff members -->
+    <div class="directory-grid">
+
+      <!-- Staff Member 1 -->
+      <div class="staff-member">
+        <a href="josh.html"> <!-- Link to the individual's page -->
+          <img src="./photo.jpeg" alt="Headshot of Josh">
+          <p class="name textColor">Josh</p>
+        </a>
+      </div>
+
+      <!-- Staff Member 2 -->
+      <div class="staff-member">
+        <a href="jane.html">
+          <img src="./photo.jpeg" alt="Headshot of Jane">
+          <p class="name textColor">Jane</p>
+        </a>
+      </div>
+
+      <!-- Staff Member 3 -->
+      <div class="staff-member">
+        <a href="alex.html">
+          <img src="./photo.jpeg" alt="Headshot of Alex">
+          <p class="name textColor">Alex</p>
+        </a>
+      </div>
+
+      <!-- Staff Member 4 -->
+      <div class="staff-member">
+        <a href="emily.html">
+          <img src="./photo.jpeg" alt="Headshot of Emily">
+          <p class="name textColor">Emily</p>
+        </a>
+      </div>
+
+      <!-- Staff Member 5 -->
+      <div class="staff-member">
+        <a href="chris.html">
+          <img src="./photo.jpeg" alt="Headshot of Chris">
+          <p class="name textColor">Chris</p>
+        </a>
+      </div>
+
+      <!-- Staff Member 6 -->
+      <div class="staff-member">
+        <a href="sarah.html">
+          <img src="./photo.jpeg" alt="Headshot of Sarah">
+          <p class="name textColor">Sarah</p>
+        </a>
+      </div>
+
+      <!-- Staff Member 7 -->
+      <div class="staff-member">
+        <a href="michael.html">
+          <img src="./photo.jpeg" alt="Headshot of Michael">
+          <p class="name textColor">Michael</p>
+        </a>
+      </div>
+
+      <!-- Staff Member 8 -->
+      <div class="staff-member">
+        <a href="lisa.html">
+          <img src="./photo.jpeg" alt="Headshot of Lisa">
+          <p class="name textColor">Lisa</p>
+        </a>
+      </div>
+
+       <!-- Staff Member 9 -->
+       <div class="staff-member">
+        <a href="david.html">
+          <img src="./photo.jpeg" alt="Headshot of David">
+          <p class="name textColor">David</p>
+        </a>
+      </div>
+
+       <!-- Staff Member 10 -->
+       <div class="staff-member">
+        <a href="maria.html">
+          <img src="./photo.jpeg" alt="Headshot of Maria">
+          <p class="name textColor">Maria</p>
+        </a>
+      </div>
+
+       <!-- Staff Member 11 -->
+       <div class="staff-member">
+        <a href="kevin.html">
+          <img src="./photo.jpeg" alt="Headshot of Kevin">
+          <p class="name textColor">Kevin</p>
+        </a>
+      </div>
+
+       <!-- Staff Member 12 -->
+       <div class="staff-member">
+        <a href="laura.html">
+          <img src="./photo.jpeg" alt="Headshot of Laura">
+          <p class="name textColor">Laura</p>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="textColor" style="background-color: #eee">
+    <!-- Reusing the footer from your template -->
+    Created with
+    <a href="https://enbizcard.vishnuraghav.com/" target="_blank" rel="noopener noreferrer" class="textColor">EnBizCard</a>
+  </footer>
+
+</body>
+</html>
