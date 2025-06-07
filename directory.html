@@ -5,7 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+  <script>
+    "http" == window.location.href.substr(0, 4) &&
+      "/" != window.location.href.slice(-1) &&
+      window.location.replace(window.location.href + "/");
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
   <title>Our Team - Staff Directory</title>
   <!-- Link to your existing stylesheet -->
   <link rel="stylesheet" href="./style.min.css" />
@@ -15,6 +20,8 @@
       max-width: 60rem; /* Allow wider layout for directory */
     }
 
+    /* The main container from your stylesheet is a flex container, which centers its children. 
+       This is the correct structure for replicating the original page's layout. */
     main {
       margin-top: 0; /* Adjust margin for directory page */
     }
@@ -24,9 +31,10 @@
         font-weight: 800;
         font-size: 2.5rem;
         line-height: 1;
-        margin-top: -4rem; /* Pull title up over the header image */
+        /* This negative margin pulls the title up over the header image, just like the profile photo on the individual pages. */
+        margin-top: -5rem; 
         margin-bottom: 2rem;
-        z-index: 1;
+        z-index: 1; /* Ensures the title appears on top of the image */
         text-align: center;
     }
 
@@ -92,15 +100,12 @@
 </head>
 
 <body id="body">
-  <header>
-    <!-- Reusing the header from your template for brand consistency -->
+  <main style="background-color: #eee; margin-top: 0px;">
     <div class="headerImgC">
       <img id="cover" src="https://assets.mediamerge.com/images/transforms/_heroFull/310/CU5-Optimized.webp" alt="Background Pattern" />
-      <img id="logo" src="./logo.png" alt="Logo" style="margin: 3px 0px 6rem" />
+      <img id="logo" src="/joshmckenna/logo.png" alt="Logo" style="margin: 3px 0px 6rem" />
     </div>
-  </header>
 
-  <main style="background-color: #eee;">
     <h1 class="directory-title">Our Team</h1>
     
     <!-- Grid container for all staff members -->
@@ -109,7 +114,7 @@
       <!-- Staff Member 1 -->
       <div class="staff-member">
         <a href="josh.html"> <!-- Link to the individual's page -->
-          <img src="./photo.jpeg" alt="Headshot of Josh">
+          <img id="profilePhoto" src="/joshmckenna/photo.jpeg" alt="Headshot of Josh">
           <p class="name textColor">Josh</p>
         </a>
       </div>
@@ -117,7 +122,7 @@
       <!-- Staff Member 2 -->
       <div class="staff-member">
         <a href="jane.html">
-          <img src="./photo.jpeg" alt="Headshot of Jane">
+          <img id="profilePhoto" src="./photo.jpeg" alt="Headshot of Jane">
           <p class="name textColor">Jane</p>
         </a>
       </div>
@@ -125,7 +130,7 @@
       <!-- Staff Member 3 -->
       <div class="staff-member">
         <a href="alex.html">
-          <img src="./photo.jpeg" alt="Headshot of Alex">
+          <img id="profilePhoto" src="./photo.jpeg" alt="Headshot of Alex">
           <p class="name textColor">Alex</p>
         </a>
       </div>
@@ -133,7 +138,7 @@
       <!-- Staff Member 4 -->
       <div class="staff-member">
         <a href="emily.html">
-          <img src="./photo.jpeg" alt="Headshot of Emily">
+          <img id="profilePhoto" src="./photo.jpeg" alt="Headshot of Emily">
           <p class="name textColor">Emily</p>
         </a>
       </div>
@@ -141,7 +146,7 @@
       <!-- Staff Member 5 -->
       <div class="staff-member">
         <a href="chris.html">
-          <img src="./photo.jpeg" alt="Headshot of Chris">
+          <img id="profilePhoto" src="./photo.jpeg" alt="Headshot of Chris">
           <p class="name textColor">Chris</p>
         </a>
       </div>
@@ -149,7 +154,7 @@
       <!-- Staff Member 6 -->
       <div class="staff-member">
         <a href="sarah.html">
-          <img src="./photo.jpeg" alt="Headshot of Sarah">
+          <img id="profilePhoto" src="./photo.jpeg" alt="Headshot of Sarah">
           <p class="name textColor">Sarah</p>
         </a>
       </div>
@@ -157,7 +162,7 @@
       <!-- Staff Member 7 -->
       <div class="staff-member">
         <a href="michael.html">
-          <img src="./photo.jpeg" alt="Headshot of Michael">
+          <img id="profilePhoto" src="./photo.jpeg" alt="Headshot of Michael">
           <p class="name textColor">Michael</p>
         </a>
       </div>
@@ -165,7 +170,7 @@
       <!-- Staff Member 8 -->
       <div class="staff-member">
         <a href="lisa.html">
-          <img src="./photo.jpeg" alt="Headshot of Lisa">
+          <img id="profilePhoto" src="./photo.jpeg" alt="Headshot of Lisa">
           <p class="name textColor">Lisa</p>
         </a>
       </div>
@@ -173,7 +178,7 @@
        <!-- Staff Member 9 -->
        <div class="staff-member">
         <a href="david.html">
-          <img src="./photo.jpeg" alt="Headshot of David">
+          <img id="profilePhoto" src="./photo.jpeg" alt="Headshot of David">
           <p class="name textColor">David</p>
         </a>
       </div>
@@ -181,7 +186,7 @@
        <!-- Staff Member 10 -->
        <div class="staff-member">
         <a href="maria.html">
-          <img src="./photo.jpeg" alt="Headshot of Maria">
+          <img id="profilePhoto" src="./photo.jpeg" alt="Headshot of Maria">
           <p class="name textColor">Maria</p>
         </a>
       </div>
@@ -189,7 +194,7 @@
        <!-- Staff Member 11 -->
        <div class="staff-member">
         <a href="kevin.html">
-          <img src="./photo.jpeg" alt="Headshot of Kevin">
+          <img id="profilePhoto" src="./photo.jpeg" alt="Headshot of Kevin">
           <p class="name textColor">Kevin</p>
         </a>
       </div>
@@ -197,7 +202,7 @@
        <!-- Staff Member 12 -->
        <div class="staff-member">
         <a href="laura.html">
-          <img src="./photo.jpeg" alt="Headshot of Laura">
+          <img id="profilePhoto" src="./photo.jpeg" alt="Headshot of Laura">
           <p class="name textColor">Laura</p>
         </a>
       </div>
@@ -206,10 +211,128 @@
   </main>
 
   <footer class="textColor" style="background-color: #eee">
-    <!-- Reusing the footer from your template -->
     Created with
-    <a href="https://enbizcard.vishnuraghav.com/" target="_blank" rel="noopener noreferrer" class="textColor">EnBizCard</a>
+    <a href="https://enbizcard.vishnuraghav.com/" target="_blank" rel="noopener noreferrer"
+      class="textColor">EnBizCard</a>
   </footer>
+  <script src="./qrcode.min.js"></script>
+  <script>
+    let m = document.getElementById("modal"),
+      c = document.getElementById("close"),
+      ki = document.getElementById("keyView"),
+      cv = document.getElementById("copyView"),
+      curl = document.getElementById("copyURL"),
+      qrv = document.getElementById("qrView"),
+      qr = document.getElementById("qr"),
+      s = document.getElementById("share"),
+      sqr = document.getElementById("showQR"),
+      sk = document.getElementById("showKey");
+    function tC(e) {
+      "2rem" == e.style.top
+        ? ((e.style.visibility = "visible"),
+          (e.style.top = "0px"),
+          (e.style.opacity = 1))
+        : ((e.style.top = "2rem"),
+          (e.style.opacity = 0),
+          setTimeout(() => {
+            e.style.visibility = "hidden";
+          }, 200));
+    }
+    function dN(e) {
+      e.style.display = "none";
+    }
+    window.addEventListener("load", () => {
+      (document.querySelector("#topActions").style.display = "flex"),
+        (qr.innerHTML = new QRCode({
+          content: window.location.href,
+          container: "svg-viewbox",
+          join: !0,
+          ecl: "L",
+          padding: 0,
+        }).svg());
+    }),
+      navigator.canShare
+        ? s.addEventListener("click", () => {
+          navigator.share({
+            title: document.title,
+            text: "You can view my Digital Business Card here:",
+            url: window.location.href,
+          });
+        })
+        : s.addEventListener("click", () => {
+          tC(m), (cv.style.display = "flex"), dN(qrv), ki && dN(ki);
+        }),
+      sqr.addEventListener("click", () => {
+        tC(m), (qrv.style.display = "block"), dN(cv), ki && dN(ki);
+      }),
+      sk &&
+      sk.addEventListener("click", () => {
+        tC(m), ki && (ki.style.display = "flex"), dN(cv), dN(qrv);
+      }),
+      c.addEventListener("click", () => tC(m)),
+      curl.addEventListener("click", async () => {
+        let e = curl.querySelectorAll(".iconColor")[1];
+        await navigator.clipboard
+          .writeText(window.location.href)
+          .then((t) => {
+            (e.innerText = "Copied"),
+              setTimeout(() => {
+                e.innerText = "Copy URL";
+              }, 1e3);
+          });
+      });
+  </script>
+  <script>
+    let pC = document.querySelectorAll(".pCtrl"),
+      pP = document.querySelectorAll(".playPause"),
+      srcs = document.querySelectorAll(".source");
+    srcs.forEach((e) => {
+      (e.style.pointerEvents = "none"), e.removeAttribute("controls");
+    }),
+      pC.forEach((e, l) => {
+        e.style.display = "flex";
+        let r = e.querySelector(".currentTime"),
+          s = e.querySelector(".seekBar"),
+          t = e.querySelector(".playPause"),
+          a = t.querySelector(".play"),
+          c = t.querySelector(".pause");
+        srcs[l].addEventListener("timeupdate", () => {
+          let e = srcs[l].currentTime,
+            t = (100 / srcs[l].duration) * e;
+          (s.value = t),
+            100 == t &&
+            ((s.value = 0),
+              (a.style.display = "block"),
+              (c.style.display = "none"));
+          let o = Math.floor(e / 60),
+            y = Math.floor(e % 60);
+          o.toString().length < 2 && (o = "0" + o),
+            y.toString().length < 2 && (y = "0" + y),
+            (r.value = o + ":" + y);
+        }),
+          s.addEventListener("change", () => {
+            srcs[l].currentTime =
+              srcs[l].duration * (parseInt(s.value) / 100);
+          }),
+          t.addEventListener("click", () => {
+            srcs[l].paused
+              ? (srcs.forEach((e, r) => {
+                l != r && (e.paused || e.pause());
+              }),
+                pP.forEach((e, l) => {
+                  let r = e.querySelector(".play"),
+                    s = e.querySelector(".pause");
+                  (r.style.display = "block"), (s.style.display = "none");
+                }),
+                srcs[l].play(),
+                (a.style.display = "none"),
+                (c.style.display = "block"))
+              : (srcs[l].pause(),
+                (c.style.display = "none"),
+                (a.style.display = "block"));
+          });
+      });
+  </script>
 
 </body>
 </html>
