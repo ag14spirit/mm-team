@@ -174,8 +174,8 @@ main {
   z-index: 1;
 }
 .miniPhoto {
-  width: 4rem;
-  height: 4rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 100%;
   box-sizing: content-box;
   pointer-events: none;
