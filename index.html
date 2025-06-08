@@ -23,41 +23,32 @@
     main {
       margin-top: 0; /* Adjust margin for directory page */
     }
-
     .directory-title {
-        color: #f46a00;
-        font-weight: 800;
-        font-size: 2.5rem;
-        line-height: 1;
-        /* This negative margin pulls the title up over the header image, just like the profile photo on the individual pages. */
-        margin-top: -5rem; 
-        margin-bottom: 2rem;
-        z-index: 1; /* Ensures the title appears on top of the image */
-        text-align: center;
+      color: #f46a00;
+      font-weight: 800;
+      font-size: 2.25rem;
+      line-height: 1;
+      margin: 0;
+      text-align: center;
     }
-
     .directory-grid {
       display: grid;
       /* Creates a responsive grid that shows 2 columns on small screens and up to 4 on larger ones */
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 2rem 2rem; /* Row and column gap */
-      padding: 2rem;
+      padding: 1rem;
       width: 100%;
       box-sizing: border-box;
     }
-
     .staff-member {
       text-align: center;
       transition: transform 0.5s ease;
-      border-radius: 0.5rem;
+      border-radius: 0.375rem;
       padding: 1rem;
     }
-
     .staff-member:hover {
       transform: scale(1.025);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
-
     .staff-member a {
       text-decoration: none;
       color: #f46a00; /* Use text color from your theme */
@@ -65,21 +56,17 @@
       flex-direction: column;
       align-items: center;
     }
-
     .staff-member img {
       width: 4rem;
       height: 4rem;
       border-radius: 100%;
       object-fit: cover;
-      border: 2px solid #fff; /* White border to lift the photo off the page */
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
-
     .staff-member .name {
       font-size: 1rem;
       font-weight: 600;
       line-height: 1;
-      margin: 0;
     }
     
     /* Responsive adjustments for larger screens */

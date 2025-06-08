@@ -160,51 +160,6 @@ main {
   text-align: center;
   border-radius: 0.375rem;
 }
-.directory-title {
-  color: #f46a00;
-  font-weight: 800;
-  font-size: 2.25rem;
-  line-height: 1;
-  margin: 0;
-  text-align: center;
-}
-.directory-grid {
-  display: grid;
-  /* Creates a responsive grid that shows 2 columns on small screens and up to 4 on larger ones */
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem 2rem; /* Row and column gap */
-  padding: 1rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-.staff-member {
-  text-align: center;
-  transition: transform 0.5s ease;
-  border-radius: 0.375rem;
-  padding: 1rem;
-}
-.staff-member:hover {
-  transform: scale(1.025);
-}
-.staff-member a {
-  text-decoration: none;
-  color: #f46a00; /* Use text color from your theme */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.staff-member img {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 100%;
-  object-fit: cover;
-  margin-bottom: 0.5rem;
-}
-.staff-member .name {
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1;
-}
 #profilePhoto {
   width: 10rem;
   height: 10rem;
