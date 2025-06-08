@@ -48,13 +48,13 @@
       cursor: pointer;
     }
 
-    .closeColor {
-      /* filter: invert(1) */
+    /* .closeColor {
+      filter: invert(1)
     }
 
     .topAction {
-      /* filter: invert(1) */
-    }
+      filter: invert(1)
+    } */
 
     .iconColor {
       color: #eee;
@@ -80,7 +80,7 @@
       font-style: normal;
     }
   </style>
-  <link rel="stylesheet" href="./style.min.css" />
+  <link rel="stylesheet" href="/_assets/style.min.css" />
 </head>
 
 <body id="body">
@@ -109,30 +109,6 @@
         </svg>
       </div>
     </a>
-    <div id="keyView">
-      <p class="textColor">Use my public key to send me encrypted messages</p>
-      <a download="" target="_blank" id="dlKey" rel="noreferrer" tabindex="-1" style="background-color: #f46a00"
-        href="./Joshua McKenna's public key.asc">
-        <div class="icon iconColor">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="
-                fill-rule: evenodd;
-                clip-rule: evenodd;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-miterlimit: 2;
-              ">
-            <path style="fill: none" d="M0 0h24v24H0z"></path>
-            <path d="M21 15v4c0 1.097-.903 2-2 2H5c-1.097 0-2-.903-2-2v-4m4-5 5 5 5-5m-5 5V3" style="
-                  fill: none;
-                  fill-rule: nonzero;
-                  stroke: #eee;
-                  stroke-width: 2px;
-                "></path>
-          </svg>
-        </div>
-        <span class="iconColor">Download Key</span>
-      </a>
-    </div>
     <div id="copyView">
       <p class="textColor">Copy and send the URL to share my Business Card</p>
       <button id="copyURL" style="background-color: #f46a00">
@@ -446,7 +422,7 @@
     <a href="https://enbizcard.vishnuraghav.com/" target="_blank" rel="noopener noreferrer"
       class="textColor">EnBizCard</a>
   </footer>
-  <script src="./qrcode.min.js"></script>
+  <script src="/_assets/qrcode.min.js"></script>
   <script>
     let m = document.getElementById("modal"),
       c = document.getElementById("close"),
