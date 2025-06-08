@@ -34,7 +34,7 @@
     .directory-grid {
       display: grid;
       /* Creates a responsive grid that shows 2 columns on small screens and up to 4 on larger ones */
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       gap: 2rem 2rem; /* Row and column gap */
       padding: 1rem;
       width: 100%;
@@ -70,15 +70,15 @@
     }
     
     /* Responsive adjustments for larger screens */
-    @media (min-width: 640px) { /* sm breakpoint */
+    @media (min-width: 540px) { /* sm breakpoint */
         .directory-grid {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
-    @media (min-width: 1024px) { /* lg breakpoint */
+    @media (min-width: 960px) { /* lg breakpoint */
         .directory-grid {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
     }
   </style>
