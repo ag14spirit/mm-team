@@ -185,7 +185,6 @@ main {
 }
 .staff-member:hover {
   transform: scale(1.025);
-  box-shadow: 0 0.1rem 0.1rem rgba(0,0,0,0.1);
 }
 .staff-member a {
   text-decoration: none;
