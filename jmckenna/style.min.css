@@ -173,6 +173,17 @@ main {
   margin-top: -6rem;
   z-index: 1;
 }
+.miniPhoto {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  box-sizing: content-box;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 #info {
   display: flex;
   flex-direction: column;
