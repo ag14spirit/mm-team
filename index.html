@@ -42,7 +42,7 @@
       display: grid;
       /* Creates a responsive grid that shows 2 columns on small screens and up to 4 on larger ones */
       grid-template-columns: repeat(2, 1fr);
-      gap: 2rem 1.5rem; /* Row and column gap */
+      gap: 2rem 2rem; /* Row and column gap */
       padding: 1rem;
       width: 100%;
       box-sizing: border-box;
@@ -50,37 +50,37 @@
 
     .staff-member {
       text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.5s ease;
       border-radius: 0.5rem;
       padding: 1rem;
     }
 
     .staff-member:hover {
-      transform: translateY(-5px);
+      transform: scale(1.025);
       box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
     .staff-member a {
       text-decoration: none;
-      color: #333c4e; /* Use text color from your theme */
+      color: #f46a00; /* Use text color from your theme */
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
     .staff-member img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 100%;
       object-fit: cover;
-      border: 4px solid #fff; /* White border to lift the photo off the page */
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border: 2px solid #fff; /* White border to lift the photo off the page */
       margin-bottom: 1rem;
     }
 
     .staff-member .name {
       font-size: 1.1rem;
       font-weight: 600;
+      line-height: 1;
       margin: 0;
     }
     
