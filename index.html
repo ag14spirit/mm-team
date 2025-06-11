@@ -13,10 +13,6 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
   <title>Our Team - Staff Directory</title>
   <style>
-    /* Additional styles for the directory grid layout */
-    body {
-      max-width: 60rem; /* Allow wider layout for directory */
-    }
 
     /* The main container from your stylesheet is a flex container, which centers its children. 
        This is the correct structure for replicating the original page's layout. */
@@ -34,11 +30,12 @@
     .directory-grid {
       display: grid;
       /* Creates a responsive grid that shows 2 columns on small screens and up to 4 on larger ones */
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 2rem 2rem; /* Row and column gap */
       padding: 1rem;
       width: 100%;
       box-sizing: border-box;
+      justify-content: center;
     }
     .staff-member {
       text-align: center;
@@ -71,13 +68,22 @@
     /* Responsive adjustments for larger screens */
     @media (min-width: 540px) { /* sm breakpoint */
         .directory-grid {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, minmax(200px, 300px));
+            justify-content: center;
         }
     }
 
     @media (min-width: 960px) { /* lg breakpoint */
         .directory-grid {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, minmax(200px, 300px ));
+            justify-content: center;
+        }
+    }
+
+    @media (min-width: 1200px) { 
+        .directory-grid {
+            grid-template-columns: repeat(4, minmax(200px, 300px));
+            justify-content: center;
         }
     }
   </style>
@@ -96,7 +102,7 @@
   <main style="background-color: #eee; margin-top: 0px;">
     <div class="headerImgC">
       <img id="cover" src="https://assets.mediamerge.com/images/transforms/_heroFull/310/CU5-Optimized.webp" alt="Background Pattern" />
-      <img id="logo" src="./assets/logo.png" alt="Logo" style="margin: 3px 0px 6rem" />
+      <img id="logo" src="./assets/logo.png" alt="Logo" />
     </div>
 
     <h1>Our Team</h1>
