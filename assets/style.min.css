@@ -8,7 +8,7 @@ body {
   margin: 0 auto;
   width: 100%;
   padding: 0;
-  max-width: 60rem;
+  max-width: 30rem;
   color: #333c4e;
   position: relative;
 }
@@ -219,7 +219,7 @@ main {
 }
 .sub {
   font-size: 0.9rem;
-  margin: 0.5rem 0 0;
+  margin-bottom: 2rem;
   opacity: 0.8;
 }
 .textC {
